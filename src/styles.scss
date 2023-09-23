@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Google Web Fonts */
+/* @import url('https://fonts.gstatic.com'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+/* Font Awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css');
+
+/* Libraries Stylesheet */
+@import 'assets/lib/owlcarousel/assets/owl.carousel.min.css';
+@import 'assets/lib/lightbox/css/lightbox.min.css';
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+
+/* Customized Bootstrap Stylesheet */
+/* @import 'assets/css/style.css'; */
+

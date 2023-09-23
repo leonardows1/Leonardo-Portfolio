@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'LeonardosPortfolio';
+  title = "Leonardo's Portfolio";
+  theme: theme = theme.dark;
+}
+
+export enum theme{
+  'dark',
+  'light'
 }
