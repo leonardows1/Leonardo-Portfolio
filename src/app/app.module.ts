@@ -12,10 +12,11 @@ import { PortfolioModule } from './modules/portfolio/portfolio.module';
 import { QualificationModule } from './modules/qualification/qualification.module';
 import { ServiceModule } from './modules/service/service.module';
 import { SkillModule } from './modules/skill/skill.module';
-import { NgbCollapse, NgbCollapseModule, NgbModule, NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 import { ImageItemModule } from './widgets/image-item/image-item.module';
 import { TitleModule } from './widgets/title/title.module';
 import { VideoModalModule } from './widgets/video-modal/video-modal.module';
+import { ScrollingModule } from '@angular/cdk/scrolling';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,9 @@ import { VideoModalModule } from './widgets/video-modal/video-modal.module';
     SkillModule,
     ImageItemModule,
     TitleModule,
-    VideoModalModule
+    VideoModalModule,
+    ScrollingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

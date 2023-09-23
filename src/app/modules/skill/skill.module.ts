@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SkillComponent } from './skill.component';
-
+import { SkillComponent } from './components/skill.component';
+import { NgbProgressbarModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -9,7 +9,8 @@ import { SkillComponent } from './skill.component';
     SkillComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    NgbProgressbarModule
   ],
   exports: [SkillComponent]
 })

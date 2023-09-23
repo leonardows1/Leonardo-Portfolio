@@ -1,0 +1,19 @@
+<div class="container-fluid py-5" id="skill">
+  <div class="container">
+      <div class="position-relative d-flex align-items-center justify-content-center">
+          <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Skills</h1>
+          <h1 class="position-absolute text-uppercase text-primary">My Skills</h1>
+      </div>
+      <div class="row align-items-center">
+          <div class="col-md-6" *ngFor="let skills of skillsMatrix">
+              <div class="skill mb-4" *ngFor="let skill of skills">
+                  <div class="d-flex justify-content-between">
+                      <h6 class="font-weight-bold">{{ skill.name }}</h6>
+                      <h6 class="font-weight-bold">{{ skill.level }}%</h6>
+                  </div>
+                  <p><ngb-progressbar type="success" [value]="skill.level"></ngb-progressbar></p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

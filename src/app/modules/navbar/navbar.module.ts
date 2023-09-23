@@ -1,6 +1,6 @@
-import { NgModule } from '@angular/core';
+import { NgModule, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NavbarComponent } from './navbar.component';
+import { NavbarComponent } from './components/navbar.component';
 import { RouterModule } from '@angular/router';
 import { NgbCollapse } from '@ng-bootstrap/ng-bootstrap';
 
@@ -13,6 +13,8 @@ import { NgbCollapse } from '@ng-bootstrap/ng-bootstrap';
     RouterModule,
     NgbCollapse
   ],
-  exports: [NavbarComponent]
+  exports: [
+    NavbarComponent,
+  ]
 })
 export class NavbarModule { }

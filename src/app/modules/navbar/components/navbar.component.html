@@ -1,0 +1,19 @@
+<nav
+  [ngClass]="{
+    'show': isNavbarVisible,
+    'hide': !isNavbarVisible
+  }"
+  class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+  <a [routerLink]="'.'" class="navbar-brand ml-lg-3">
+      <h1 class="m-0 display-5"><span class="text-primary">Free</span>Folio</h1>
+  </a>
+  <button type="button" (click)="collapseMenu()" class="navbar-toggler">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse px-lg-3">
+      <div class="navbar-nav m-auto py-0" *ngFor="let navLink of navLinks">
+          <a href="#{{navLink.id}}" class="nav-item nav-link" (click)="scrollToElement(navLink.id)">{{navLink.text}}</a>
+      </div>
+      <a href="" class="btn btn-outline-primary d-none d-lg-block">Hire Me</a>
+  </div>
+</nav>
